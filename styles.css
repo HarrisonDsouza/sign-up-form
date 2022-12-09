@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "headerFont";
+    src: url("assets/Norse-Bold.otf");
+}
+@font-face {
+    font-family: "primary";
+    src: url("assets/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "secondary";
+    src: url("assets/Poppins-Light.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container{
+    min-height: 100vh;
+    background: url("assets/123Z_2101.w020.n001.947B.p15.947.jpg") no-repeat 0 0/cover;  
+}
+
+.container .header{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 0 30px;
+    width: calc(45% - 30px);
+}
+
+.container .header img{
+    height: 100px;
+}
+
+.container .header h1{
+    font-family: headerFont;
+    color: #ffffff;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 2px rgb(0, 134, 163);
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right: 30px;
+    margin: auto 0;
+    height: 95%;
+    width: 55%;
+    background: linear-gradient(124deg,rgba(181,198,224,0.7) 0%, rgba(172, 184, 185, 0.7) 50%);}
+.form-container .contents{
+    width: 100%;
+}
+
+.form-container .contents > p:first-child{
+    margin: 15px 20px 10px 20px;
+    font-family: primary;
+    font-weight: 200;
+
+
+}
+
+.form-container .contents > p:nth-child(2){
+    margin: 0px 20px 15px 20px;
+    font-family: primary;
+    font-weight: 200;
+}
+
+.form-container form{
+    padding: 0 20px;
+}
+
+.form-container form h4{
+    margin: 10px 20px 10px 0;
+    font-family: primary;
+    font-weight: 600;
+}
+
+.container form > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: secondary;
+}
+
+.container form .input{
+    margin: 5px 0;
+}
+
+.container form .input label{
+    margin-bottom: -3px;
+    font-size: 16px;
+    display: block;
+}
+
+.container form .input input{
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.container form .input input:focus{
+    outline: none;
+    border: 1.5px solid gray;
+    background-color: rgb(217, 216, 231);
+}
+.form-container button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: secondary;
+    margin: 20px 20px 5px 20px;
+    padding: 7px 20px;
+    background-color: rgb(17, 81, 155);
+    color: #ffffff;
+}
+
+.form-container button:hover{
+    background-color: rgb(0, 134, 163);
+    
+}
+
+.form-container .contents > p:nth-of-type(3){
+    margin: 0px 20px 0 20px
+}
+.form-container .contents > p:nth-of-type(3) a{
+    color: rgb(17, 81, 155);
+}
